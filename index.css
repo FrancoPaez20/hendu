@@ -125,7 +125,7 @@
 	font-weight: 900;
 }
 
-.nosotros{
+.nosotros, .mensaje{
 
 	min-height: 500px;
 	display: -webkit-flex;
@@ -144,13 +144,30 @@
 	background: #282828;
 }
 
-.nosotros p{
+.mensaje{
+
+	background:-webkit-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),url(2.jpg);
+	background:-o-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),url(2.jpg);
+	background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),url(2.jpg);
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+.nosotros p, .mensaje p{
 	
 	max-width: 1300px;
 	font-size: var(--parrafoCinco);
 	font-weight: 700;
 	line-height: 2;
 	color: #FFF;
+}
+
+.mensaje p{
+
+	text-align: center;
+	
 }
 
 .servicios{
@@ -224,7 +241,7 @@
 
 .servicios .gridServicios .item p{
 
-	font-size: var(--parrafoCinco);
+	font-size: var(--parrafoCuatro);
 	color: #000;
 }
 
